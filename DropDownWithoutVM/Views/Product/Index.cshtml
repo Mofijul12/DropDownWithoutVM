@@ -1,0 +1,17 @@
+﻿@model DropDownWithoutVM.Models.ProductCategoryViewModel
+
+<h2>Select a Category</h2>
+
+@if (!string.IsNullOrEmpty(Model.SelectedCategoryName))
+{
+    <div class="alert alert-info">
+        You selected: @Model.SelectedCategoryName
+    </div>
+}
+
+<form method="post">
+    <label for="category">Choose a category:</label>
+    @Html.DropDownListFor(model => model.SelectedCategoryId, Model.Categories, "-- Select Category --", new { @class = "form-control" })
+
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+</form>
