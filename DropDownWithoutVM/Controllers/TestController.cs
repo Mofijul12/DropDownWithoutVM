@@ -8,8 +8,14 @@ namespace DropDownWithoutVM.Controllers
         {
             return View();
         }
-
+            
         public IActionResult Create()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+         public IActionResult Create(int id)
         {
             return View();
         }
