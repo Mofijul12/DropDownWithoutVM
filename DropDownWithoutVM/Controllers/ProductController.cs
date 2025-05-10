@@ -32,30 +32,6 @@ namespace DropDownWithoutVM.Controllers
             return View(viewModel);
         }
 
-        // POST: Product/Index
-        //[HttpPost]
-        //public IActionResult Index(ProductCategoryViewModel viewModel)
-        //{
-        //    // Get the selected category based on the SelectedCategoryId from the ViewModel
-        //    var selectedCategory = _context.Categories
-        //        .FirstOrDefault(c => c.CategoryId == viewModel.SelectedCategoryId);
-
-        //    // Optionally, you can store the selected category name in the ViewModel
-        //    if (selectedCategory != null)
-        //    {
-        //        viewModel.SelectedCategoryName = selectedCategory.Name;
-        //    }
-
-        //    // Re-fetch categories to ensure the dropdown remains populated after form submission
-        //    viewModel.Categories = _context.Categories.Select(c => new SelectListItem
-        //    {
-        //        Text = c.Name,
-        //        Value = c.CategoryId.ToString()
-        //    }).ToList();
-
-        //    // Pass the ViewModel back to the view
-        //    return View(viewModel);
-        //}
     }
 
 }
